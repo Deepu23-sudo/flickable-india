@@ -1,0 +1,3047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Flickable India — meaningful conversations, untold stories and perspectives that inspire.">
+
+    <meta name="keywords"
+          content="Flickable India, podcast, Syed Zamin Ali, Bhopal podcast, Indian podcast, interviews">
+
+    <meta name="author"
+          content="Flickable India">
+
+    <title>Flickable India | Conversations That Matter</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero-fix.css">
+    <link rel="stylesheet" href="mobile-fix.css">
+</head>
+<!-- =========================================================
+     WELCOME ROLE POPUP
+========================================================= -->
+
+<div class="role-popup" id="rolePopup">
+
+    <!-- BACKDROP -->
+    <div class="role-popup-backdrop"></div>
+
+
+    <!-- POPUP CARD -->
+    <div class="role-popup-card">
+
+        <!-- TOP LINE -->
+        <div class="role-popup-top-line"></div>
+
+
+        <!-- CLOSE BUTTON -->
+        <button
+            type="button"
+            class="role-popup-close"
+            id="rolePopupClose"
+            aria-label="Close popup"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- ICON -->
+        <div class="role-popup-icon">
+
+            <div class="role-popup-icon-ring"></div>
+
+            <i class="fa-solid fa-podcast"></i>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="role-popup-content">
+
+            <span class="role-popup-small">
+                WELCOME TO OUR PODCAST
+            </span>
+
+            <h2>
+                Who are you <strong>joining as?</strong>
+            </h2>
+
+            <div class="role-popup-line"></div>
+
+            <p>
+                Whether you're here to share your story
+                or be part of our community, we'd love
+                to have you with us.
+            </p>
+
+        </div>
+
+
+        <!-- OPTIONS -->
+        <div class="role-popup-options">
+
+
+            <!-- GUEST -->
+            <button
+                type="button"
+                class="role-option role-guest"
+                data-role="guest"
+            >
+
+                <div class="role-option-icon">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+
+                <div class="role-option-text">
+
+                    <span class="role-option-label">
+                        I'M A
+                    </span>
+
+                    <strong>
+                        Guest
+                    </strong>
+
+                    <small>
+                        I want to share my story
+                    </small>
+
+                </div>
+
+                <div class="role-option-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </button>
+
+
+            <!-- SUBSCRIBER -->
+            <button
+                type="button"
+                class="role-option role-subscriber"
+                data-role="subscriber"
+            >
+
+                <div class="role-option-icon">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+
+                <div class="role-option-text">
+
+                    <span class="role-option-label">
+                        I'M A
+                    </span>
+
+                    <strong>
+                        Subscriber
+                    </strong>
+
+                    <small>
+                        I want to follow the journey
+                    </small>
+
+                </div>
+
+                <div class="role-option-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="role-popup-footer">
+
+            <i class="fa-solid fa-sparkles"></i>
+
+            <span>
+                Your story. Your voice. Your journey.
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+<body>
+
+<!-- =========================================================
+     PRELOADER
+========================================================= -->
+
+<div id="preloader">
+    <div class="loader-logo">
+        <img src="./images/logo.png" alt="Flickable India">
+    </div>
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="header" id="header">
+
+    <div class="header-container">
+
+        <a href="#home" class="brand">
+            <img src="./images/logo.png"
+                 alt="Flickable India Logo">
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#episodes" class="nav-link">Episodes</a>
+            <a href="#guests" class="nav-link">Guests</a>
+            <a href="#team" class="nav-link">Our Team</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#social" class="nav-link">Social</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="https://www.youtube.com/@Flickable_india"
+               target="_blank"
+               class="watch-btn">
+                <i class="fa-brands fa-youtube"></i>
+                Watch Now
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <button class="close-menu" id="closeMenu">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="mobile-menu-logo">
+        <img src="./images/logo.png" alt="Flickable India">
+    </div>
+
+    <div class="mobile-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#episodes">Episodes</a>
+        <a href="#guests">Guests</a>
+        <a href="#team">Our Team</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#social">Social</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-slider">
+
+        <!-- HERO 1 -->
+        <div class="hero-slide active">
+
+            <img class="hero-background"
+                 src="./images/hero1.jpeg"
+                 alt="Flickable India Hero 1">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    FLICKABLE INDIA
+                </span>
+
+                <h1>
+                    Conversations<br>
+                    <span>That Matter.</span>
+                </h1>
+
+                <p>
+                    Meaningful conversations with people,
+                    personalities and voices that shape our world.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#episodes"
+                       class="primary-btn">
+                        Explore Episodes
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@Flickable_india"
+                       target="_blank"
+                       class="outline-btn">
+                        <i class="fa-brands fa-youtube"></i>
+                        Watch on YouTube
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO 2 -->
+        <div class="hero-slide">
+
+            <img class="hero-background"
+                 src="./images/hero2.jpeg"
+                 alt="Flickable India Hero 2">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    FLICKABLE INDIA
+                </span>
+
+                <h1>
+                    Stories Beyond<br>
+                    <span>The Surface.</span>
+                </h1>
+
+                <p>
+                    Discover the journeys, struggles and experiences
+                    behind the people you see.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#about"
+                       class="primary-btn">
+                        Discover More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO 3 -->
+        <div class="hero-slide">
+
+            <img class="hero-background"
+                 src="./images/hero3.jpeg"
+                 alt="Flickable India Hero 3">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    MEANINGFUL CONVERSATIONS
+                </span>
+
+                <h1>
+                    People.<br>
+                    <span>Perspectives. Purpose.</span>
+                </h1>
+
+                <p>
+                    Different voices. Different journeys.
+                    One platform.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#guests"
+                       class="primary-btn">
+                        Meet Our Guests
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO 4 -->
+        <div class="hero-slide">
+
+            <img class="hero-background"
+                 src="./images/hero4.jpeg"
+                 alt="Flickable India Hero 4">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    EVERY STORY MATTERS
+                </span>
+
+                <h1>
+                    Every Voice<br>
+                    <span>Has A Story.</span>
+                </h1>
+
+                <p>
+                    We go beyond headlines to discover
+                    the human stories behind them.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#episodes"
+                       class="primary-btn">
+                        Listen & Watch
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO 5 -->
+        <div class="hero-slide">
+
+            <img class="hero-background"
+                 src="./images/hero5.jpeg"
+                 alt="Flickable India Hero 5">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    FLICKABLE INDIA
+                </span>
+
+                <h1>
+                    India Through<br>
+                    <span>Meaningful Conversations.</span>
+                </h1>
+
+                <p>
+                    Real people. Real journeys.
+                    Real conversations.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact"
+                       class="primary-btn">
+                        Join The Conversation
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO CONTROLS -->
+
+    <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+
+    <!-- HERO DOTS -->
+
+    <div class="hero-dots" id="heroDots">
+
+        <button class="hero-dot active" aria-label="Hero slide 1"></button>
+        <button class="hero-dot" aria-label="Hero slide 2"></button>
+        <button class="hero-dot" aria-label="Hero slide 3"></button>
+        <button class="hero-dot" aria-label="Hero slide 4"></button>
+        <button class="hero-dot" aria-label="Hero slide 5"></button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat-item">
+            <strong>7+</strong>
+            <span>Episodes</span>
+        </div>
+
+        <div class="stat-item">
+            <strong>7+</strong>
+            <span>Guests</span>
+        </div>
+
+        <div class="stat-item">
+            <strong>1</strong>
+            <span>Purpose</span>
+        </div>
+
+        <div class="stat-item">
+            <strong>∞</strong>
+            <span>Stories</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT FLICKABLE INDIA
+========================================================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>ABOUT FLICKABLE INDIA</span>
+
+            <h2>
+                The Bhopal Journey <br>
+                <strong>FLICKABLE INDIA.</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-content">
+
+                <div class="about-intro">
+
+                    <span class="about-eyebrow">
+                        WHO WE ARE
+                    </span>
+
+                    <h3>
+                        Conversations that go
+                        <strong>beyond the obvious.</strong>
+                    </h3>
+
+                </div>
+
+
+                <p class="about-text-large">
+                    Flickable India brings together <strong>real people,
+                    real experiences, and real conversations</strong> —
+                    giving stories the space they truly deserve.
+                </p>
+
+
+                <div class="about-points">
+
+                    <p>
+                        We don't just talk about <strong>what happened.</strong>
+                        We explore the journey behind it — the ideas,
+                        struggles, decisions, failures, and achievements
+                        that make every story unique.
+                    </p>
+
+                    <p>
+                        From public figures and entrepreneurs to doctors,
+                        artists, creators, professionals, and inspiring
+                        individuals, we bring <strong>diverse voices</strong>
+                        to one platform.
+                    </p>
+
+                </div>
+
+
+                <div class="about-highlight">
+
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <div class="quote-content">
+
+                        <span class="quote-label">
+                            OUR PHILOSOPHY
+                        </span>
+
+                        <h4>
+                            Beyond the headlines.<br>
+                            Beyond the surface.<br>
+                            <strong>Into the story.</strong>
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <p class="about-ending">
+                    Our goal is simple — <strong>ask better questions,
+                    uncover untold stories, and create conversations
+                    that connect, inform, and inspire.</strong>
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ABOUT CARD
+            ================================================== -->
+
+            <div class="about-card">
+
+                <div class="about-card-inner">
+
+                    <span class="about-card-label">
+                        FLICKABLE INDIA
+                    </span>
+
+                    <h3>
+                        Every person has a story.
+                    </h3>
+
+                    <p>
+                        Every perspective has value.
+                        Every conversation can make an impact.
+                    </p>
+
+                    <a href="#episodes"
+                       class="text-link">
+
+                        Watch Episodes
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     VISION & MISSION
+========================================================= -->
+
+<section class="section vision-section">
+
+    <div class="container">
+
+        <div class="vision-grid">
+
+            <div class="vision-card">
+
+                <div class="vision-icon">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+
+                <span>OUR VISION</span>
+
+                <h3>
+                    Building conversations
+                    that go beyond the surface.
+                </h3>
+
+                <p>
+                    To build a platform where meaningful conversations
+                    bring forward diverse voices, real journeys, and
+                    perspectives that shape India.
+                </p>
+
+                <p>
+                    We envision Flickable India as a trusted digital
+                    platform where every conversation has a purpose,
+                    every story has value, and every voice has the
+                    opportunity to inspire, inform, and create impact.
+                </p>
+
+            </div>
+
+
+            <div class="vision-card mission-card">
+
+                <div class="vision-icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <span>OUR MISSION</span>
+
+                <h3>
+                    Honest conversations.
+                    Authentic storytelling.
+                </h3>
+
+                <p>
+                    Our mission is to create honest, engaging, and
+                    meaningful conversations with people from different
+                    walks of life.
+                </p>
+
+                <p>
+                    Through thoughtful conversations and authentic
+                    storytelling, Flickable India aims to inform,
+                    inspire, connect, and give audiences a deeper
+                    perspective on the people and stories that matter.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOST / FOUNDER
+========================================================= -->
+
+<section class="section host-section">
+
+    <div class="container">
+
+        <div class="section-heading left-heading">
+
+            <span>MEET THE HOST</span>
+
+            <h2>
+                The Voice Behind<br>
+                <strong>Flickable India</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="host-grid">
+
+
+            <!-- HOST IMAGE -->
+
+            <div class="host-image-wrapper">
+
+                <div class="host-image-frame">
+
+                    <img src="./images/host.jpg"
+                         alt="Syed Zamin Ali">
+
+                </div>
+
+
+                <!-- CLICKABLE FOUNDER & HOST BADGE -->
+
+                <a href="https://www.instagram.com/syed_zamy/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="host-badge"
+                   aria-label="Visit Syed Zamin Ali on Instagram">
+
+                    <strong>FOUNDER</strong>
+                    <span>& HOST</span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- HOST CONTENT -->
+
+            <div class="host-content">
+
+                <span class="small-label">
+                    FOUNDER & HOST
+                </span>
+
+                <h3>
+                    SYED ZAMIN ALI
+                </h3>
+
+                <h4>
+                    Flickable India | Flickable Digital Marketing
+                </h4>
+
+                <p>
+                    Syed Zamin Ali is a creative entrepreneur,
+                    storyteller, and digital professional passionate
+                    about turning ideas into impactful stories.
+                </p>
+
+                <p>
+                    As the Founder & Host of Flickable India, he brings
+                    meaningful conversations and inspiring perspectives
+                    to the audience.
+                </p>
+
+                <p>
+                    A Digital Marketer, Dancer, Rapper, Content Writer,
+                    Videographer & Editor, he blends creativity,
+                    technology, and storytelling to create content
+                    that connects, inspires, and leaves an impact.
+                </p>
+
+
+                <!-- HOST SKILLS -->
+
+                <div class="host-skills">
+
+                    <span>Digital Marketing</span>
+                    <span>Storytelling</span>
+                    <span>Content Creation</span>
+                    <span>Videography</span>
+                    <span>Editing</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================================================
+     WHAT WE DO
+========================================================= -->
+
+<section class="section services-section">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span>WHAT WE DO</span>
+
+            <h2>
+                More Than Just<br>
+                <strong>A Podcast.</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                We combine conversations, creativity and digital
+                storytelling to create content that connects.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-number">01</div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+
+                <h3>Podcast</h3>
+
+                <p>
+                    Meaningful conversations with people
+                    from different walks of life.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">02</div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+
+                <h3>Video Content</h3>
+
+                <p>
+                    Visual stories, interviews and experiences
+                    designed for today's digital audience.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">03</div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <h3>Social Media</h3>
+
+                <p>
+                    Engaging short-form content that brings
+                    stories to a wider audience.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">04</div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <h3>Creative Storytelling</h3>
+
+                <p>
+                    Turning ideas, journeys and experiences
+                    into impactful digital stories.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">05</div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+
+                <h3>Collaborations</h3>
+
+                <p>
+                    Working with personalities, creators,
+                    organizations and brands.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EPISODES
+========================================================= -->
+
+<section class="section episodes-section" id="episodes">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>THE PODCAST</span>
+
+            <h2>
+                Latest <strong>Episodes</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Explore conversations, journeys and stories
+                from the Flickable India podcast.
+            </p>
+
+        </div>
+
+
+        <div class="episodes-grid">
+
+
+            <!-- EPISODE 1 -->
+
+            <article class="episode-card">
+
+                <div class="episode-image">
+
+                    <img src="./images/episode1.jpg"
+                         alt="Mufti Ali Qadar Hussain">
+
+                    <span class="episode-number">
+                        EP 01
+                    </span>
+
+                    <a href="https://youtu.be/hKV2DdCwXvY"
+                       target="_blank"
+                       class="play-button">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="episode-content">
+
+                    <span class="episode-category">
+                        PODCAST
+                    </span>
+
+                    <h3>
+                        Aaj Ka Nojawan Aur Islam —
+                        Mufti Ali Qadar Hussain Breaks It Down
+                    </h3>
+
+                    <p>
+                        A meaningful conversation exploring
+                        youth, faith and perspectives.
+                    </p>
+
+                    <a href="https://youtu.be/hKV2DdCwXvY"
+                       target="_blank"
+                       class="episode-link">
+                        Watch Episode
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EPISODE 2 -->
+
+            <article class="episode-card">
+
+                <div class="episode-image">
+
+                    <img src="./images/episode2.jpg"
+                         alt="Dr Ayesha Ali">
+
+                    <span class="episode-number">
+                        EP 02
+                    </span>
+
+                    <a href="https://youtu.be/x1kjLQ1w6fk"
+                       target="_blank"
+                       class="play-button">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="episode-content">
+
+                    <span class="episode-category">
+                        THE BHOPAL JOURNEY
+                    </span>
+
+                    <h3>
+                        The Untold Story of Dr. Ayesha Ali
+                    </h3>
+
+                    <p>
+                        Love, life and the untold journey
+                        of Dr. Ayesha Ali.
+                    </p>
+
+                    <a href="https://youtu.be/x1kjLQ1w6fk"
+                       target="_blank"
+                       class="episode-link">
+                        Watch Episode
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EPISODE 3 -->
+
+            <article class="episode-card">
+
+                <div class="episode-image">
+
+                    <img src="./images/episode3.jpg"
+                         alt="Arif Masood">
+
+                    <span class="episode-number">
+                        EP 03
+                    </span>
+
+                    <a href="https://youtu.be/hsQJRlKKlic"
+                       target="_blank"
+                       class="play-button">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="episode-content">
+
+                    <span class="episode-category">
+                        BHOPAL EXCLUSIVE
+                    </span>
+
+                    <h3>
+                        Arif Masood Unfiltered!
+                    </h3>
+
+                    <p>
+                        The Bhopal Journey with Syed Zamin Ali.
+                    </p>
+
+                    <a href="https://youtu.be/hsQJRlKKlic"
+                       target="_blank"
+                       class="episode-link">
+                        Watch Episode
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EPISODE 4 -->
+
+            <article class="episode-card">
+
+                <div class="episode-image">
+
+                    <img src="./images/episode4.jpg"
+                         alt="Dr Asif Ali">
+
+                    <span class="episode-number">
+                        EP 04
+                    </span>
+
+                    <a href="https://youtu.be/bswbDE_QldE"
+                       target="_blank"
+                       class="play-button">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="episode-content">
+
+                    <span class="episode-category">
+                        HEALTH & LIFE
+                    </span>
+
+                    <h3>
+                        The Doctor Life — Dr. Asif Ali
+                    </h3>
+
+                    <p>
+                        A conversation with a homeopathic doctor
+                        with 16 years of experience in Bhopal.
+                    </p>
+
+                    <a href="https://youtu.be/bswbDE_QldE"
+                       target="_blank"
+                       class="episode-link">
+                        Watch Episode
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EPISODE 5 -->
+
+            <article class="episode-card">
+
+                <div class="episode-image">
+
+                    <img src="./images/episode5.jpg"
+                         alt="Jagdish Dadlani">
+
+                    <span class="episode-number">
+                        EP 05
+                    </span>
+
+                    <a href="https://youtu.be/NmMfxvZMZCE"
+                       target="_blank"
+                       class="play-button">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="episode-content">
+
+                    <span class="episode-category">
+                        ENTREPRENEURSHIP
+                    </span>
+
+                    <h3>
+                        From Struggle To Success
+                    </h3>
+
+                    <p>
+                        A real businessman's journey with
+                        Jagdish Dadlani.
+                    </p>
+
+                    <a href="https://youtu.be/NmMfxvZMZCE"
+                       target="_blank"
+                       class="episode-link">
+                        Watch Episode
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EPISODE 6 -->
+
+            <article class="episode-card">
+
+                <div class="episode-image">
+
+                    <img src="./images/episode6.jpg"
+                         alt="Abbas Hafeez">
+
+                    <span class="episode-number">
+                        EP 06
+                    </span>
+
+                    <a href="https://youtu.be/dsUWkJYlP50"
+                       target="_blank"
+                       class="play-button">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="episode-content">
+
+                    <span class="episode-category">
+                        POLITICS
+                    </span>
+
+                    <h3>
+                        Congress Chief Spokesperson
+                        Abbas Hafeez Khan
+                    </h3>
+
+                    <p>
+                        The Bhopal Journey — Unfiltered.
+                    </p>
+
+                    <a href="https://youtu.be/dsUWkJYlP50"
+                       target="_blank"
+                       class="episode-link">
+                        Watch Episode
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- EPISODE 7 -->
+
+            <article class="episode-card">
+
+                <div class="episode-image">
+
+                    <img src="./images/episode7.jpg"
+                         alt="Shujaat Hussain">
+
+                    <span class="episode-number">
+                        EP 07
+                    </span>
+
+                    <a href="https://youtu.be/H45rTCBMbwc"
+                       target="_blank"
+                       class="play-button">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="episode-content">
+
+                    <span class="episode-category">
+                        JOURNEY
+                    </span>
+
+                    <h3>
+                        Indore Ka Safar —
+                        The Journey ft. Shujaat Hussain
+                    </h3>
+
+                    <p>
+                        A unique journey exploring stories,
+                        places and memories.
+                    </p>
+
+                    <a href="https://youtu.be/H45rTCBMbwc"
+                       target="_blank"
+                       class="episode-link">
+                        Watch Episode
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="center-button">
+
+            <a href="https://www.youtube.com/@Flickable_india"
+               target="_blank"
+               class="primary-btn dark-btn">
+
+                View YouTube Channel
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHO'S NEXT — RAHILA FIRDOUS
+========================================================= -->
+
+<section class="section featured-section" id="guests">
+
+    <div class="container">
+
+        <div class="featured-grid">
+
+
+            <!-- =================================================
+                 GUEST IMAGE
+            ================================================== -->
+
+            <div class="featured-image">
+
+                <img
+                    src="./images/rahila-firdous.jpg"
+                    alt="Rahila Firdous"
+                >
+
+                <div class="featured-label">
+                    UPCOMING GUEST
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 GUEST CONTENT
+            ================================================== -->
+
+            <div class="featured-content">
+
+                <span class="small-label">
+                    UPCOMING CONVERSATION
+                </span>
+
+
+                <h2>
+                    RAHILA
+                    <span>FIRDOUS</span>
+                </h2>
+
+
+                <div class="featured-divider"></div>
+
+
+                <p class="featured-intro">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Rahila Firdous is a Bhopal-born cricketer who has
+                    carved her own path in women's cricket as a
+                    right-handed wicketkeeper-batter and leader.
+                </p>
+
+
+                <!-- =================================================
+                     FEATURED QUOTE
+                ================================================== -->
+
+                <div class="featured-quote">
+
+                    
+
+                    <p>
+                        From representing Madhya Pradesh to stepping onto
+                        the Women’s Premier League stage, Rahila’s journey
+                        is a story of ambition, leadership and persistence.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     GUEST DESCRIPTION
+                ================================================== -->
+
+                <p class="featured-description">
+                    A product of Bhopal, Rahila has represented
+                    Madhya Pradesh Women, India C Women, Central Zone
+                    Women and Bundelkhand Bulls Women. Her leadership
+                    and performances in domestic cricket earned her a
+                    place with Mumbai Indians Women in the WPL 2026,
+                    marking another important chapter in her cricketing
+                    journey.
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+
+
+                
+                <!-- =================================================
+                     INSTAGRAM BUTTON
+                ================================================== -->
+
+                <a
+                    href="https://www.instagram.com/rahila_firdous_1/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="primary-btn featured-btn"
+                    aria-label="Rahila Firdous Instagram"
+                >
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    INSTAGRAM
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     OUR TEAM
+========================================================= -->
+
+<section class="section team-section" id="team">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>THE PEOPLE BEHIND THE PLATFORM</span>
+
+            <h2>
+                Our <strong>Team</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="team-grid">
+
+
+
+
+
+            <!-- =================================================
+                 TEAM 2 — CONTENT CAPTAIN
+            ================================================== -->
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img
+                        src="./images/team-1.jpg"
+                        alt="Deepanshu Singh Rajput"
+                    >
+
+                </div>
+
+                <div class="team-info">
+
+                    <span>CONTENT CAPTAIN</span>
+
+                    <h3>
+                        Deepanshu Singh Rajput
+                    </h3>
+
+                    <p>
+                        A creative professional focused on
+                        coordination, planning, communication
+                        and smooth execution of digital projects.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/_heydeepxnshu_/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="team-social"
+                        aria-label="Deepanshu Singh Rajput Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 TEAM 3 — COMMUNICATIONS DIRECTOR
+            ================================================== -->
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img
+                        src="./images/team-2.jpg"
+                        alt="Sanjana Jaiswal"
+                    >
+
+                </div>
+
+                <div class="team-info">
+
+                    <span>COMMUNICATIONS DIRECTOR</span>
+
+                    <h3>
+                        Sanjana Jaiswal
+                    </h3>
+
+                    <p>
+                        Leading communication and outreach initiatives
+                        while shaping the platform’s voice, strengthening
+                        its presence, and building meaningful audience
+                        connections.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/sanjanaa.jaiswall/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="team-social"
+                        aria-label="Sanjana Jaiswal Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 TEAM 4 — GROWTH PARTNER
+            ================================================== -->
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img
+                        src="./images/team-3.jpg"
+                        alt="Goutam Agrawal"
+                    >
+
+                </div>
+
+                <div class="team-info">
+
+                    <span>GROWTH PARTNER</span>
+
+                    <h3>
+                        Goutam Agrawal
+                    </h3>
+
+                    <p>
+                        Turning opportunities into growth through
+                        strategic planning, collaboration, and a strong
+                        focus on expanding the platform’s impact.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/__goutam__agrawal__04/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="team-social"
+                        aria-label="Goutam Agrawal Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 TEAM 5 — CREATIVE PRODUCTION PARTNER
+            ================================================== -->
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img
+                        src="./images/team-4.jpg"
+                        alt="Param Dangi"
+                    >
+
+                </div>
+
+                <div class="team-info">
+
+                    <span>CREATIVE PRODUCTION PARTNER</span>
+
+                    <h3>
+                        Param Dangi
+                    </h3>
+
+                    <p>
+                        Bringing ideas to life through creative
+                        production, visual storytelling, and high-quality
+                        content that strengthens the platform’s identity.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/dangifilmproduction.official/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="team-social"
+                        aria-label="Param Dangi Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 TEAM 6 — PHOTOGRAPHY DIRECTOR
+            ================================================== -->
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img
+                        src="./images/team-5.jpg"
+                        alt="Rohit Lokhande"
+                    >
+
+                </div>
+
+                <div class="team-info">
+
+                    <span>PHOTOGRAPHY DIRECTOR</span>
+
+                    <h3>
+                        Rohit Lokhande
+                    </h3>
+
+                    <p>
+                        Framing the moments that define our journey
+                        through creative vision, authentic storytelling,
+                        and striking imagery.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/rohit_photography.09/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="team-social"
+                        aria-label="Rohit Lokhande Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 TEAM 7 — STRATEGIC PARTNER
+            ================================================== -->
+
+            
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     OUR COLLABORATIONS
+========================================================= -->
+
+<section class="section collaborations-section" id="collaborations">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span>OUR COLLABORATIONS</span>
+
+            <h2>
+                Brands That <strong>Trust Us.</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Proud to collaborate with brands, creators and
+                organizations that believe in meaningful storytelling.
+            </p>
+
+        </div>
+
+
+        <div class="brands-grid">
+
+            <!-- BRAND 01 -->
+            <div class="brand-card">
+
+                <img src="./images/brand1.png"
+                     alt="Brand 1">
+
+            </div>
+
+
+            <!-- BRAND 02 -->
+            <div class="brand-card">
+
+                <img src="./images/brand2.png"
+                     alt="Brand 2">
+
+            </div>
+
+
+            <!-- BRAND 03 -->
+            <div class="brand-card">
+
+                <img src="./images/brand3.png"
+                     alt="Brand 3">
+
+            </div>
+
+
+            <!-- BRAND 04 -->
+            <div class="brand-card">
+
+                <img src="./images/brand4.png"
+                     alt="Brand 4">
+
+            </div>
+
+
+            <!-- BRAND 05 -->
+            <div class="brand-card">
+
+                <img src="./images/brand5.png"
+                     alt="Brand 5">
+
+            </div>
+
+
+            <!-- BRAND 06 -->
+            <div class="brand-card">
+
+                <img src="./images/brand6.png"
+                     alt="Brand 6">
+
+            </div>
+
+
+            <!-- BRAND 07 -->
+            <div class="brand-card">
+
+                <img src="./images/brand7.png"
+                     alt="Brand 7">
+
+            </div>
+
+
+            <!-- BRAND 08 -->
+            <div class="brand-card">
+
+                <img src="./images/brand8.png"
+                     alt="Brand 8">
+
+            </div>
+
+
+            <!-- BRAND 09 -->
+            <div class="brand-card">
+
+                <img src="./images/brand9.png"
+                     alt="Brand 9">
+
+            </div>
+
+
+            <!-- BRAND 10 -->
+            <div class="brand-card">
+
+                <img src="./images/brand10.png"
+                     alt="Brand 10">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SOCIAL MEDIA
+========================================================= -->
+
+<section class="section social-section" id="social">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span>FOLLOW & CONNECT</span>
+
+            <h2>
+                Flickable India <strong>Everywhere.</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Stay connected with our latest conversations,
+                videos, stories and updates.
+            </p>
+
+        </div>
+
+
+        <div class="social-grid">
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="social-card instagram-card">
+
+                <div class="social-card-header">
+
+                    <div class="social-platform-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                    <div>
+                        <h3>Instagram</h3>
+                        <span>@flickable.india</span>
+                    </div>
+
+                </div>
+
+                <div class="social-placeholder">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <p>
+                        Follow us for reels,
+                        behind-the-scenes moments
+                        and latest updates.
+                    </p>
+
+                    <a href="https://www.instagram.com/flickable.india/"
+                       target="_blank"
+                       class="social-follow">
+                        Follow Instagram
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- YOUTUBE -->
+
+            <div class="social-card youtube-card">
+
+                <div class="social-card-header">
+
+                    <div class="social-platform-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                    <div>
+                        <h3>YouTube</h3>
+                        <span>Flickable India</span>
+                    </div>
+
+                </div>
+
+                <div class="social-placeholder">
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                    <p>
+                        Watch full podcast episodes,
+                        interviews and conversations.
+                    </p>
+
+                    <a href="https://www.youtube.com/@Flickable_india"
+                       target="_blank"
+                       class="social-follow">
+                        Subscribe on YouTube
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FACEBOOK -->
+
+            <div class="social-card facebook-card">
+
+                <div class="social-card-header">
+
+                    <div class="social-platform-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+
+                    <div>
+                        <h3>Facebook</h3>
+                        <span>Flickable India</span>
+                    </div>
+
+                </div>
+
+                <div class="social-placeholder">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <p>
+                        Follow our page for
+                        updates, clips and announcements.
+                    </p>
+
+                    <a href="https://www.facebook.com/people/Flickable-India/61583936745922/"
+                       target="_blank"
+                       class="social-follow">
+                        Follow Facebook
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- X -->
+
+            <div class="social-card x-card">
+
+                <div class="social-card-header">
+
+                    <div class="social-platform-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+
+                    <div>
+                        <h3>X / Twitter</h3>
+                        <span>@flickable_india</span>
+                    </div>
+
+                </div>
+
+                <div class="social-placeholder">
+
+                    <i class="fa-brands fa-x-twitter"></i>
+
+                    <p>
+                        Follow the conversation and
+                        get our latest updates.
+                    </p>
+
+                    <a href="https://x.com/flickable_india"
+                       target="_blank"
+                       class="social-follow">
+                        Follow on X
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- THREADS -->
+
+            <div class="social-card threads-card">
+
+                <div class="social-card-header">
+
+                    <div class="social-platform-icon">
+                        <i class="fa-brands fa-threads"></i>
+                    </div>
+
+                    <div>
+                        <h3>Threads</h3>
+                        <span>@flickable.india</span>
+                    </div>
+
+                </div>
+
+                <div class="social-placeholder">
+
+                    <i class="fa-brands fa-threads"></i>
+
+                    <p>
+                        Join the conversation and
+                        follow our thoughts and updates.
+                    </p>
+
+                    <a href="https://www.threads.com/@flickable.india"
+                       target="_blank"
+                       class="social-follow">
+                        Follow Threads
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SPOTIFY -->
+
+            <div class="social-card spotify-card">
+
+                <div class="social-card-header">
+
+                    <div class="social-platform-icon">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+
+                    <div>
+                        <h3>Spotify</h3>
+                        <span>Flickable India</span>
+                    </div>
+
+                </div>
+
+                <div class="social-placeholder coming-soon">
+
+                    <i class="fa-solid fa-headphones"></i>
+
+                    <p>
+                        Our podcast is coming soon
+                        to Spotify.
+                    </p>
+
+                    <span class="coming-soon-btn">
+                        Coming Soon
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     GALLERY SECTION
+========================================================= -->
+
+<section class="section gallery-section" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span>VISUAL STORIES</span>
+
+            <h2>
+                Our <strong>Gallery</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Podcast moments, behind-the-scenes stories
+                and memorable conversations.
+            </p>
+
+        </div>
+
+
+<!-- =========================================================
+     GALLERY SECTION
+========================================================= -->
+
+<section class="section gallery-section" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span>VISUAL STORIES</span>
+
+            <h2>
+                Our <strong>Gallery</strong>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Podcast moments, behind-the-scenes stories
+                and memorable conversations.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             GALLERY GRID
+        ================================================= -->
+
+        <div class="gallery-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="./gallery1.jpeg"
+                    alt="Flickable India Gallery Photo 1"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>VIEW PHOTO</span>
+
+                    <div class="gallery-icon">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="./gallery2.jpeg"
+                    alt="Flickable India Gallery Photo 2"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>VIEW PHOTO</span>
+
+                    <div class="gallery-icon">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="./gallery3.jpeg"
+                    alt="Flickable India Gallery Photo 3"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>VIEW PHOTO</span>
+
+                    <div class="gallery-icon">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHOTO 4 -->
+
+            <div class="gallery-item">
+
+                <img
+                    src="./gallery4.jpeg"
+                    alt="Flickable India Gallery Photo 4"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>VIEW PHOTO</span>
+
+                    <div class="gallery-icon">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VIDEO 5
+            ================================================== -->
+
+            <div
+                class="gallery-item gallery-video"
+                data-video="./gallery5.mp4"
+            >
+
+                <video
+                    src="./gallery5.mp4"
+                    muted
+                    playsinline
+                    preload="metadata"
+                ></video>
+
+                <div class="gallery-overlay">
+
+                    <span>WATCH VIDEO</span>
+
+                    <div class="gallery-icon">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VIDEO 6
+            ================================================== -->
+
+            <div
+                class="gallery-item gallery-video"
+                data-video="./gallery6.mp4"
+            >
+
+                <video
+                    src="./gallery6.mp4"
+                    muted
+                    playsinline
+                    preload="metadata"
+                ></video>
+
+                <div class="gallery-overlay">
+
+                    <span>WATCH VIDEO</span>
+
+                    <div class="gallery-icon">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VIDEO 7
+            ================================================== -->
+
+            <div
+                class="gallery-item gallery-video"
+                data-video="./gallery7.mp4"
+            >
+
+                <video
+                    src="./gallery7.mp4"
+                    muted
+                    playsinline
+                    preload="metadata"
+                ></video>
+
+                <div class="gallery-overlay">
+
+                    <span>WATCH VIDEO</span>
+
+                    <div class="gallery-icon">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+<!-- =========================================================
+     FULLSCREEN GALLERY VIEWER
+========================================================= -->
+
+<div
+    class="gallery-lightbox"
+    id="galleryLightbox"
+>
+
+    <button
+        type="button"
+        class="gallery-close"
+        id="galleryClose"
+        aria-label="Close gallery"
+    >
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+
+    <button
+        type="button"
+        class="gallery-prev"
+        id="galleryPrev"
+        aria-label="Previous"
+    >
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+
+    <div
+        class="gallery-viewer"
+        id="galleryViewer"
+    ></div>
+
+
+    <button
+        type="button"
+        class="gallery-next"
+        id="galleryNext"
+        aria-label="Next"
+    >
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+
+            <div class="contact-info">
+
+                <span class="small-label">
+                    CONTACT FLICKABLE INDIA
+                </span>
+
+                <h2>
+                    Let's Connect.
+                </h2>
+
+                <p>
+                    For collaborations, podcast opportunities,
+                    partnerships or general enquiries, reach out
+                    to us.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+
+                        <a href="mailto:flickableindiamangement@gmail.com">
+                            flickableindiamangement@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+
+                        <strong>
+                            Bhopal, Madhya Pradesh, India
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-socials">
+
+                    <a href="https://www.instagram.com/flickable.india/"
+                       target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@Flickable_india"
+                       target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/people/Flickable-India/61583936745922/"
+                       target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://x.com/flickable_india"
+                       target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.threads.com/@flickable.india"
+                       target="_blank">
+                        <i class="fa-brands fa-threads"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-card-logo">
+
+                    <img src="./images/logo.png"
+                         alt="Flickable India">
+
+                </div>
+
+                <h3>
+                    Conversations.<br>
+                    Stories.<br>
+                    Impact.
+                </h3>
+
+                <p>
+                    Flickable India — a platform for
+                    meaningful conversations and stories
+                    that deserve to be heard.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <img src="./images/logo.png"
+                     alt="Flickable India">
+
+                <p>
+                    Conversations that matter.
+                    Stories that inspire.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="https://www.instagram.com/flickable.india/"
+                       target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@Flickable_india"
+                       target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/people/Flickable-India/61583936745922/"
+                       target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://x.com/flickable_india"
+                       target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.threads.com/@flickable.india"
+                       target="_blank">
+                        <i class="fa-brands fa-threads"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#episodes">Episodes</a>
+                <a href="#guests">Guests</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <a href="#team">Our Team</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#social">Social</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Connect</h4>
+
+                <a href="mailto:flickableindiamangement@gmail.com">
+                    Email Us
+                </a>
+
+                <a href="https://www.youtube.com/@Flickable_india"
+                   target="_blank">
+                    YouTube
+                </a>
+
+                <a href="https://www.instagram.com/flickable.india/"
+                   target="_blank">
+                    Instagram
+                </a>
+
+                <span class="spotify-text">
+                    Spotify — Coming Soon
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                Flickable India. All Rights Reserved.
+            </p>
+
+            <p>
+                Crafted with purpose by Flickable India.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =========================================================
+     BECOME A GUEST
+========================================================= -->
+
+<section class="guest-section" id="guest-application">
+
+    <div class="guest-container">
+
+        <!-- ================= LEFT CONTENT ================= -->
+
+        <div class="guest-intro">
+
+            <span class="guest-eyebrow">
+                BECOME PART OF THE CONVERSATION
+            </span>
+
+            <h2>
+                Have a story
+                <strong>worth sharing?</strong>
+            </h2>
+
+            <div class="guest-line"></div>
+
+            <p>
+                We believe every person has a story worth hearing.
+                If you have an experience, idea, expertise or journey
+                that can inspire our audience, we'd love to hear from you.
+            </p>
+
+
+            <div class="guest-points">
+
+                <div class="guest-point">
+
+                    <span class="guest-point-number">
+                        01
+                    </span>
+
+                    <div>
+                        <strong>
+                            Share Your Story
+                        </strong>
+
+                        <small>
+                            Tell us what makes your journey unique.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="guest-point">
+
+                    <span class="guest-point-number">
+                        02
+                    </span>
+
+                    <div>
+                        <strong>
+                            Join The Conversation
+                        </strong>
+
+                        <small>
+                            Bring your ideas and perspective to the podcast.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="guest-point">
+
+                    <span class="guest-point-number">
+                        03
+                    </span>
+
+                    <div>
+                        <strong>
+                            Inspire Others
+                        </strong>
+
+                        <small>
+                            Turn your experience into something meaningful.
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= FORM ================= -->
+
+        <div class="guest-form-wrapper">
+
+            <div class="guest-form-header">
+
+                <span>
+                    GUEST APPLICATION
+                </span>
+
+                <h3>
+                    Let's hear
+                    <strong>your story.</strong>
+                </h3>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form
+                class="guest-form"
+                id="guestForm"
+                action="https://formspree.io/f/xljrqrrl"
+                method="POST"
+            >
+
+
+                <!-- SUBJECT -->
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Guest Application"
+                >
+
+
+                <!-- NAME -->
+
+                <div class="guest-field">
+
+                    <label for="guestName">
+                        FULL NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guestName"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="guest-field">
+
+                    <label for="guestEmail">
+                        EMAIL ADDRESS
+                    </label>
+
+                    <input
+                        type="email"
+                        id="guestEmail"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE + CITY -->
+
+                <div class="guest-row">
+
+                    <div class="guest-field">
+
+                        <label for="guestPhone">
+                            PHONE
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="guestPhone"
+                            name="phone"
+                            placeholder="Phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="guest-field">
+
+                        <label for="guestCity">
+                            CITY
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guestCity"
+                            name="city"
+                            placeholder="Your city"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROFESSION -->
+
+                <div class="guest-field">
+
+                    <label for="guestProfession">
+                        PROFESSION / ROLE
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guestProfession"
+                        name="profession"
+                        placeholder="e.g. Entrepreneur, Artist, Author..."
+                    >
+
+                </div>
+
+
+                <!-- WEBSITE -->
+
+                <div class="guest-field">
+
+                    <label for="guestWebsite">
+                        WEBSITE / SOCIAL MEDIA
+                    </label>
+
+                    <input
+                        type="url"
+                        id="guestWebsite"
+                        name="website"
+                        placeholder="https://..."
+                    >
+
+                </div>
+
+
+                <!-- TOPIC -->
+
+                <div class="guest-field">
+
+                    <label for="guestTopic">
+                        WHAT WOULD YOU LIKE TO TALK ABOUT?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guestTopic"
+                        name="topic"
+                        placeholder="Your topic or area of expertise"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="guest-field">
+
+                    <label for="guestMessage">
+                        TELL US ABOUT YOUR STORY
+                    </label>
+
+                    <textarea
+                        id="guestMessage"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us briefly about yourself and why you'd like to join the podcast..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="guest-submit"
+                    id="guestSubmit"
+                >
+
+                    <span>
+                        SUBMIT APPLICATION
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+
+            <!-- SUCCESS MESSAGE -->
+
+            <div
+                class="guest-success"
+                id="guestSuccess"
+            >
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <div>
+
+                    <strong>
+                        Application Submitted
+                    </strong>
+
+                    <span>
+                        Thank you! We'll get back to you soon.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button class="back-to-top" id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
